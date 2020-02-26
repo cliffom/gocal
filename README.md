@@ -1,4 +1,4 @@
-# gocal - Example Golang API
+# gocal - Example Golang API [![CircleCI](https://circleci.com/gh/cliffom/gocal/tree/master.svg?style=svg)](https://circleci.com/gh/cliffom/gocal/tree/master)
 
 ## Getting Started
 
