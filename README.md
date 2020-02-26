@@ -2,6 +2,11 @@
 
 ## Getting Started
 
+### Environment Variables
+
+- ENVIRONMENT: optional, defaults to `development`
+- PORT: optional, defaults to `3000`
+
 ### Running locally
 
 ```sh
