@@ -1,10 +1,6 @@
-# gocal - Example Golang API w/ Google Calendar integration
+# gocal - Example Golang API
 
 ## Getting Started
-
-First and foremost you will need to [enable the Google Calendar API](https://developers.google.com/calendar/quickstart/go) and download the generated `credentials.json` file to the parent of this repo.
-
-After doing so, running the app for the first time will provide a URL that you must open in your browser. After accepting what is presented, a code will be generated to paste back into the command line that will generate a `token.json` file for authentication.
 
 ### Running locally
 
