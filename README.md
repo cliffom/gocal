@@ -9,6 +9,12 @@ go get
 go run gocal.go
 ```
 
+or via Docker:
+
+```sh
+docker-compose up
+```
+
 #### Example Request
 
 ```sh
@@ -44,4 +50,11 @@ curl --location --request POST 'http://localhost:3000/api/classes/' \
   ],
   "total_attendance": 5
 }'
+```
+
+### Testing
+
+```sh
+go get -t ./...
+go test ./...
 ```
