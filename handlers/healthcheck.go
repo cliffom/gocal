@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-// Status is the struct used for healthchecks
+// HealthcheckStatus is the struct used for healthchecks
 type HealthcheckStatus struct {
 	Environment string `json:"environment"`
 	Status      string `json:"status"`
