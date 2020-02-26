@@ -4,7 +4,7 @@ jobs:
     docker:
       - image: circleci/golang:1.13
 
-      working_directory: /go/src/github.com/cliffom/gocal
+    working_directory: /go/src/github.com/cliffom/gocal
     steps:
       - checkout
       - run: go get -v -t -d ./...
