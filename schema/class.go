@@ -17,14 +17,31 @@ type Class struct {
 	TotalAttendance int             `json:"total_attendance"`
 }
 
-// CreateListing creates and returns a ClassListing
-func (c Class) CreateListing() (*ClassListing, *Error) {
+func (c Class) validate() *Error {
 	if c.StartDatetime == "" {
 		err := &Error{
 			Message: "CreateListing Failed",
 			Detail:  "StartDatetime is required",
 		}
 
+		return err
+	}
+
+	if c.EndDate == "" {
+		err := &Error{
+			Message: "CreateListing Failed",
+			Detail:  "EndDate is required",
+		}
+
+		return err
+	}
+
+	return nil
+}
+
+// CreateListing creates and returns a ClassListing
+func (c Class) CreateListing() (*ClassListing, *Error) {
+	if err := c.validate(); err != nil {
 		return nil, err
 	}
 
